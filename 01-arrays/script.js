@@ -8,6 +8,7 @@ const teachers = [
   'Luca'
 ]; // NON MODIFICARE QUESTA VARIABILE
 
+
 // 1. Utilizzando un indice sull'array teachers, cambia il valore della
 // variabile fourthTeacher qui sotto in modo che sia il quarto insegnante elencato nell'array
 
@@ -34,15 +35,25 @@ const teachers = [
 
 teachers.splice(4, 1, "Patrick")
 //tramite il metodo .splice determino -d-a quale indice eliminare, -quanti- elementi eliminare, e con cosa sostituirli
-console.log(teachers);
+console.log(teachers)
 //stampo a schermo l'array 
 
 
 
 
-
 // 3. Rimuovi l'ultimo insegnante dall'array e salvalo nella variabile lastTeacher qui sotto
-const lastTeacher = null;
+
+const lastTeacher = teachers.pop()
+//tramite il metodo .pop rimuovo l'ultimo elemento e lo assegno alla variabile
+
+console.log(lastTeacher);
+//stampo a schermo la variabile che ora contiene l'ultimo elemento estratto dall'array
+
+console.log(teachers);
+//l'array ora risulta mutato, ho un elemento in meno
+
+
+
 
 // 4. Rimuovi il primo insegnante dall'array e salvalo nella variabile firstTeacher qui sotto
 const firstTeacher = null;
