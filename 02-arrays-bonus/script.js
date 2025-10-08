@@ -31,7 +31,7 @@ const teachers = [
 // con un nome di lunghezza maggiore o uguale a 5 caratteri
 
 const longNames = [];
-//cambio di valore da "null" a [], cosicchè sia bia un array inizialmente vuoto
+//cambio di valore da "null" a [], cosicchè "longNames" sia un array inizialmente vuoto
 
 for(i = 0; i < teachers.length; i++){
   let name = teachers[i]
@@ -48,6 +48,12 @@ console.log(longNames);
 
 
 // 3. Rimuovi 'Ed' dall'array teachers
+  teachers.splice(1, 1)
+  //tramite il metodo .splice determino -da- quale indice eliminare, -quanti- elementi eliminare
+
+  console.log(teachers);
+  //stampo a schermo l'array privato dell'elemento "Ed"
+
 
 // 4. Verifica se 'Fabio' è presente nell'array teachers
 // e salva il risultato nella variabile isFabioPresent
