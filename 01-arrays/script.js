@@ -89,12 +89,20 @@ const teachers = [
   //stampo a schermo l'array
 
 
-  
 
 
 // 7. Trova l'indice dell'insegnante 'Lewis' nell'array teachers
 // e salvalo nella variabile lewisIndex
-const lewisIndex = null;
+
+const lewisIndex = teachers.indexOf("Lewis")
+  //tramite li metodo .indexOf ricerca l'indice di un determinato elemento richiesto
+
+  console.log(lewisIndex)
+  //stampo a schermo la variabile che contiene il valore numerico associato all'indice dell'elemento ricercato
+
+
+
+
 
 // 8. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
