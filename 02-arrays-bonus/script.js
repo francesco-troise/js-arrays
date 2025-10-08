@@ -61,44 +61,40 @@ const teachers = [
 // 4. Verifica se 'Fabio' è presente nell'array teachers
 // e salva il risultato nella variabile isFabioPresent
 
-const ceck = "Fabio"
-//dichiaro ed inizializzo tale variabile per poterla confrontare con i valori presenti nell'array "teachers"
-let isFabioPresent = null;
-//la variabile deve essere di tipo -let, per poter procedere a riassegnazione del suo valore
+  const ceck = "Fabio"
+  //dichiaro ed inizializzo tale variabile per poterla confrontare con i valori presenti nell'array "teachers"
+  let isFabioPresent = null;
+  //la variabile deve essere di tipo -let, per poter procedere a riassegnazione del suo valore
 
-for(i = 0; i < teachers.length; i++){
-  let name = teachers[i]
-  //dichiaro tale varibile "name" per comodità durante il confronto tra "ceck" ed i valori assunti dall'indice di "teachers"
- 
-  if(ceck === name){
-  //condizione per controllare se due stringhe risultano avere lo stesso identico valore
-    
-  isFabioPresent = true
-    //assegnazione dal valore "true" in accordo con la casistica
+  for(i = 0; i < teachers.length; i++){
+    let name = teachers[i]
+    //dichiaro tale varibile "name" per comodità durante il confronto tra "ceck" ed i valori assunti dall'indice di "teachers"
+  
+    if(ceck === name){
+    //condizione per controllare se due stringhe risultano avere lo stesso identico valore
+      
+    isFabioPresent = true
+      //assegnazione dal valore "true" in accordo con la casistica
 
-  break
-  //comando per uscire dal ciclo, diversamente si avrebbe una sovrascrizione di "isFabioPresent"
+    break
+    //comando per uscire dal ciclo, diversamente si avrebbe una sovrascrizione di "isFabioPresent"
 
 
-  }else{
-   //gestione del caso in cui la condizione non sia soddisfatta 
+    }else{
+    //gestione del caso in cui la condizione non sia soddisfatta 
 
-   isFabioPresent = false
-   //assegnazione dal valore "false" in accordo con la casistica
+    isFabioPresent = false
+    //assegnazione dal valore "false" in accordo con la casistica
+    }
   }
-}
 
-console.log(`è il nome ${ceck} presente dentro l'arrey "teachers"? : ${isFabioPresent}`);
-
-
-
-
-
-
-
+  console.log(`è il nome ${ceck} presente dentro l'arrey "teachers"? : ${isFabioPresent}`);
 
 
 
 
 // 5. Unisci tutti gli insegnanti nell'array teachers in una stringa  separata da virgole e salvala nella variabile teachersString
-const teachersString = null;
+
+  const teachersString = teachers.join(", ")
+  //il metodo .join restitusice una stringa contenente i valori di un array. Si possono inserire spazi, virgole, separatori...
+  console.log(teachersString);
