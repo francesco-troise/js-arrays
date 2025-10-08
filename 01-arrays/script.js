@@ -32,6 +32,15 @@ const teachers = [
 
 // 2. Sostituisci il quinto insegnante nell'array teachers con 'Patrick'
 
+teachers.splice(4, 1, "Patrick")
+//tramite il metodo .splice determino -d-a quale indice eliminare, -quanti- elementi eliminare, e con cosa sostituirli
+console.log(teachers);
+//stampo a schermo l'array 
+
+
+
+
+
 // 3. Rimuovi l'ultimo insegnante dall'array e salvalo nella variabile lastTeacher qui sotto
 const lastTeacher = null;
 
