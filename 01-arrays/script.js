@@ -13,7 +13,7 @@ const teachers = [
 // variabile fourthTeacher qui sotto in modo che sia il quarto insegnante elencato nell'array
 
   let fourthTeacher = null;
-  //la variabile deve essere di tipo -let, per poter procere a riassegnazione del suo valore
+  //la variabile deve essere di tipo -let, per poter procedere a riassegnazione del suo valore
 
   for(i = 0; i < teachers.length; i++){
   //inizializzazione ciclo -for, gestione della condizione tramite -teachers.leng
@@ -107,7 +107,7 @@ const lewisIndex = teachers.indexOf("Lewis")
 // e salva il risultato nella variabile isTeachersEmpty
 
   let isTeachersEmpty = null
-  //la variabile deve essere di tipo -let, per poter procere a riassegnazione del suo valore
+  //la variabile deve essere di tipo -let, per poter procedere a riassegnazione del suo valore
 
     if (teachers.length === 0){
       //Condizione per verificare se la lunghezza di un array è pari a zero, in tal caso sarà vuoto
