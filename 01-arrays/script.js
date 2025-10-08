@@ -58,7 +58,7 @@ const teachers = [
 // 4. Rimuovi il primo insegnante dall'array e salvalo nella variabile firstTeacher qui sotto
 
   const firstTeacher = teachers.shift()
-  //tramite il metodo .shift rimuovo il primo elemento e lo assegno alla variabile(gli altri elementi cambiano indice)
+  //tramite il metodo .shift rimuovo il primo elemento e lo assegno alla variabile(gli altri elementi retrocedono cambiando indice)
 
   console.log(firstTeacher)
   //stampo a schermo la variabile che ora contiene il primo elemento dell'array
@@ -80,9 +80,17 @@ const teachers = [
 
 
 
-
-
 // 6. Aggiungi un insegnante di nome 'Sarah' all'inizio dell'array teachers
+
+  teachers.unshift("Sara")
+  //tramite il metodo unshift aggiungo un elemeto al primo posto di un array(gli altri elementi slittano cambiando indice)
+
+  console.log(teachers)
+  //stampo a schermo l'array
+
+
+  
+
 
 // 7. Trova l'indice dell'insegnante 'Lewis' nell'array teachers
 // e salvalo nella variabile lewisIndex
