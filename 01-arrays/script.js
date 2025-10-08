@@ -33,44 +33,54 @@ const teachers = [
 
 // 2. Sostituisci il quinto insegnante nell'array teachers con 'Patrick'
 
-teachers.splice(4, 1, "Patrick")
-//tramite il metodo .splice determino -d-a quale indice eliminare, -quanti- elementi eliminare, e con cosa sostituirli
-console.log(teachers)
-//stampo a schermo l'array 
+  teachers.splice(4, 1, "Patrick")
+  //tramite il metodo .splice determino -d-a quale indice eliminare, -quanti- elementi eliminare, e con cosa sostituirli
+  console.log(teachers)
+  //stampo a schermo l'array 
 
 
 
 
 // 3. Rimuovi l'ultimo insegnante dall'array e salvalo nella variabile lastTeacher qui sotto
 
-const lastTeacher = teachers.pop()
-//tramite il metodo .pop rimuovo l'ultimo elemento e lo assegno alla variabile
+  const lastTeacher = teachers.pop()
+  //tramite il metodo .pop rimuovo l'ultimo elemento e lo assegno alla variabile
 
-console.log(lastTeacher);
-//stampo a schermo la variabile che ora contiene l'ultimo elemento estratto dall'array
+  console.log(lastTeacher);
+  //stampo a schermo la variabile che ora contiene l'ultimo elemento estratto dall'array
 
-console.log(teachers);
-//l'array ora risulta mutato, ho un elemento in meno
+  console.log(teachers);
+  //l'array ora risulta mutato, ho un elemento in meno
 
 
 
 
 // 4. Rimuovi il primo insegnante dall'array e salvalo nella variabile firstTeacher qui sotto
-const firstTeacher = teachers.shift()
-//tramite il metodo .shift rimuovo il primo elemento e lo assegno alla variabile(gli altri elementi cambiano indice)
 
-console.log(firstTeacher)
-//stampo a schermo la variabile che ora contiene il primo elemento dell'array
+  const firstTeacher = teachers.shift()
+  //tramite il metodo .shift rimuovo il primo elemento e lo assegno alla variabile(gli altri elementi cambiano indice)
 
-console.log(teachers)
-//stampo a schermo l'array, ora privo del suo elemento "Nathan"
+  console.log(firstTeacher)
+  //stampo a schermo la variabile che ora contiene il primo elemento dell'array
 
-
+  console.log(teachers)
+  //stampo a schermo l'array, ora privo del suo elemento "Nathan"
 
 
 
 
 // 5. Aggiungi un insegnante di nome 'Vanessa' alla fine dell'array teachers
+
+  teachers.push("Vanessa")
+  //tramite il metodo .push aggiungo un elemento alla fine dell'array
+
+  console.log(teachers);
+  //stampo a schermo l'array
+
+
+
+
+
 
 // 6. Aggiungi un insegnante di nome 'Sarah' all'inizio dell'array teachers
 
